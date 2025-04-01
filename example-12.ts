@@ -1,41 +1,36 @@
+// 🧭 You are building a mapping application.
+// Use a string enum to define the four directions
+// Example: North = "north"
 
-// You are making a mapping application. 
-
-// Write an enum that defines the directions: 
-// North, South, East, West
-// Use a string enum: https://www.typescriptlang.org/docs/handbook/enums.html#string-enums
+// 💡 Docs: https://www.typescriptlang.org/docs/handbook/enums.html#string-enums
 
 enum Direction {
-	
+  // TODO: Add North, South, East, West as string values
 }
-
-// Should having a heading property type Direction
 
 class MapPosition {
+  heading: Direction;
 
-	constructor() {
-		
-	}
+  constructor() {
+    // TODO: Set a default direction
+  }
 
-	// takes a new Direction as an argument
-	move(newDirection: Direction) {
-		// set the direction on your property 
-		// Print the new direction
-	}
+  // 🧭 Updates the heading
+  move(newDirection: Direction): void {
+    // TODO: Set heading to newDirection
+    // Print the new direction
+  }
 
-	// Should return a string and print:
-	// "you are heading <direction>"
-	describe(): string {
-		return ''
-	}
+  // 🗺️ Returns a string like: "You are heading north"
+  describe(): string {
+    // TODO
+    return '';
+  }
 }
 
-const location = new MapPosition()
-console.log(location.describe())
-// Might output:
-// "You are heading north"
-location.move(/* add a direction here */)
+// Example usage:
+const location = new MapPosition();
+console.log(location.describe());
+location.move(/* Add a Direction here */);
 
-
-
-export default MapPosition
+export default MapPosition;

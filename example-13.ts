@@ -1,43 +1,43 @@
+// 🧠 Functions can be described as types.
+// This is especially useful when:
+// - passing a callback
+// - returning a function from a function (closure)
 
-// Functions can be decribed as a type.
-// This happens when you need to pass a callback 
-// or have a function that returns another function. 
-// Read about function type expressions:
+// 📚 Read more: https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions
 
-// https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions
+// ✅ Your Task:
+// - Add parameter and return types for all functions below
+// - Use function type expressions where appropriate
 
-// This function returns a function that returns a number
-
+// Returns a function that counts up from 0 each time it's called
 function count() {
-	let n = 0
-	return () => {
-		return n += 1
-	}
+  let n = 0;
+  return () => {
+    return n += 1;
+  };
 }
 
-// This function takes an array and returns an item from
-// the array
-
+// Returns a function that cycles through items in an array
 function next(arr) {
-	let i = -1
-	return () => {
-		i += 1
-		i = i === arr.length ? 0 : i
-		return arr[i]
-	}
+  let i = -1;
+  return () => {
+    i += 1;
+    i = i === arr.length ? 0 : i;
+    return arr[i];
+  };
 }
 
-// This function returns a function that generates a 
-// die roll. 
-
+// Returns a function that simulates a die roll
 function dice(sides) {
-	return (n) => {
-		return Math.floor(Math.random() * sides) * n
-	}
+  return (n) => {
+    return Math.floor(Math.random() * sides) * n;
+  };
 }
+
+// 💡 Bonus: Can you write your own function that returns a function?
 
 export {
-	count,
-	next,
-	dice
+  count,
+  next,
+  dice
 }

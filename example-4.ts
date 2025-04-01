@@ -1,11 +1,8 @@
-
 // Set the types here. There are two arrays below
 // Type an array like this: 
 // const nums: number[] = []
 // or 
 // const nums: Array<number>
-
-// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays
 
 // The first should be type number
 // The second should type string
@@ -30,10 +27,8 @@ for (let i = 0; i < 6; i += 1) {
 console.log(nums)
 console.log(chars)
 
-
 // Compile the code and check what type script says: 
 // tsc example-4.ts
-
 
 export {
   random, 

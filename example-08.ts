@@ -1,23 +1,28 @@
-// We need a Kaiju class
-// All Kaiju have name, power and type. 
-// Kaiju should have a describe method that 
-// prints: name:<name> type:<type> power:<power>
+// 🦖 Create a Kaiju class
+// Each Kaiju should have:
+// - name (string)
+// - power (number)
+// - type (KaijuType enum)
 
-// Type can be: lizard, flying, or ape. 
-// Use an enum to define the type
+// Use an enum to define possible types: lizard, flying, ape
+// Add a constructor to initialize properties
+// Add a describe() method that returns a formatted string:
+// "name:<name> type:<type> power:<power>"
 
-// Be sure to include a constructor in the 
-// Kaiju class that initializes it's properties!
-
-enum KaijuType { 
-	
+enum KaijuType {
+  // TODO: Add values like Lizard, Flying, Ape
 }
 
 class Kaiju {
-	
+  // TODO: Define properties, constructor, and describe method
+  // describe() should return a string
 }
 
+// Optional: Try creating a new Kaiju instance and calling describe()
+// const godzilla = new Kaiju('Godzilla', 9000, KaijuType.Lizard)
+// console.log(godzilla.describe())
+
 export {
-	Kaiju, 
-	KaijuType
+  Kaiju, 
+  KaijuType
 }

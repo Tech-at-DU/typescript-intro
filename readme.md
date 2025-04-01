@@ -1,82 +1,92 @@
-# TypeScript 1
 
-The code here has a problem. See if you can spot it before running the code. 
+# 🧠 TypeScript Lab – Full Intro Series
 
-Run the code and look at the output. The function wants to calculate the price with tax but the output is not correct. 
+Welcome to your TypeScript lab series! This project walks you through the core concepts of TypeScript via short, self-contained code challenges. Start with basic types and build your way up to generics, interfaces, classes, and functional patterns.
 
-What's wrong? 
+Each `example-XX.ts` file focuses on a specific concept and asks you to explore or fix the code. Use `tsc` to compile files and your editor to understand type warnings.
 
-example-1.js
+---
 
-# Typescript 2
+## 📘 Lab Outline
 
-This project has code written in Typescript. The function calculates the price plus the tax. 
+### 🟢 BASICS
 
-Notice the editor is telling us there is a problem. Try and figure out the problem. Use the Type notation to help you. 
+**example-01.js**  
+🤯 JavaScript type confusion: What happens when you don't use types?
 
-example-2.ts
+**example-02.ts**  
+🛠️ First type annotations. Fix incorrect type assignments and return types.
 
-# Typescript 3
+**example-03.ts**  
+✍️ Add parameter, variable, and return types to a basic string copier.
 
-The function in the sample code takes a string and number and copies the string that number of times and returns it. 
+**example-04.ts**  
+🧮 Type two arrays and annotate utility functions.
 
-Typescript has some problems with this because we haven't declared any types. 
+**example-05.ts**  
+🧺 Use tuple types to define snacks and annotate a display function.
 
-Your job is to add the types. 
+**example-06.ts**  
+🔁 Create a `Snack` type alias and use it with typed tuples and a display function.
 
-- Add types for both parameters
-- Add a type for the return value
-- Add types for the variables inside the function
+**example-07.ts**  
+🃏 Define an enum for card suits and use it in a `Card` object.
 
-example-3.ts
+**example-08.ts**  
+🦖 Create a `Kaiju` class using an enum for monster types and a method to describe it.
 
-# Typescript 4
+**example-09.ts**  
+💥 Use the `Kaiju` class with a `rampage()` function that uses enum values correctly.
 
-While typescript will infer a type. It is best practice most often to explicity type thing. 
+---
 
-The sample wants to build two arrays, one with random numbers and the other with random characters. Since this is Typescript you need to add the types.
+### 🟡 INTERMEDIATE
 
-example-4.ts
+**example-10.ts**  
+🎓 Create `Course` and `Student` classes. Practice inheritance, arrays, and custom methods.
 
-# Typescript 5
+**example-11.ts**  
+🧑‍🤝‍🧑 Use interfaces to generalize `Person` and `Student` into a `Human` interface.
 
-This example has three tuples. These are really arrays with mixed types. 
+**example-12.ts**  
+🧭 Define a string enum for directions. Build a class to track and describe movement.
 
-Since the code is typescript you need to add the types. 
+**example-13.ts**  
+🔁 Functions returning functions: closures, counters, array navigators.
 
-The function needs parameters type, and return type. 
+**example-14.ts**  
+📞 Type callback functions passed to `setTimeout`.
 
-example-5.ts
+**example-15.ts**  
+📦 Higher-order functions with typed return functions: sayHello, mathematizer.
 
-# Typescript-6
+---
 
-You can define a type and apply that type. 
+### 🔵 ADVANCED
 
-Here the first line defines a type Snack that is a tuple of `[sting, name]`. This is shorter than: 
+**example-16.ts**  
+💡 Introduce generics with `next()`, `fill()`, `shuffle()`, and `iterate()` functions.
 
-```
-const snack1: [sting, name] = ['Cookies', 142]
-const snack2: [sting, name] = ['Avocado', 234]
-const snack3: [sting, name] = ['Banana', 105]
-```
+**example-17.ts**  
+🤖 Design an interface and implement a `GiantRobot` class with shared structure and methods.
 
-example-6.ts
+---
 
-# Typescript 7
+## ✅ Tips for Success
 
-Any time you have a set of fixed values you can represent these with an enum. 
+- Use `tsc example-X.ts` to check for compile-time type errors.
+- Use TypeScript docs to explore [types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html), [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html), and [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html).
+- Try writing your own tests and alternate solutions.
+- Use AI (like ChatGPT!) to explain compiler errors and explore new type ideas.
 
-When would you use this: 
+---
 
-- Units - standard, imperial, metric
-- Gender - Male, Female, Non-Binary
-- Direction - North, South, East, West
+## 🧪 Optional Challenge
 
-Challenge: Write an enum for a card type. Make the example code work by adding an Enum for Suit and defining `ace` of spades!
+At the end of the lab, try creating a small app using your own types and classes, such as:
 
-example-7.ts
+- A simple RPG stat system
+- A todo list with typed tasks
+- A small game board with movements
 
-
-
-
-
+Happy coding!

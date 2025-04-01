@@ -1,4 +1,3 @@
-
 // Add types here. Be sure to set the types for: 
 // - variables
 // - function parameters

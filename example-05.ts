@@ -1,27 +1,27 @@
+// 🧠 Tuples are arrays with fixed types and lengths.
+// Define a tuple type for each snack: [string, number]
 
-// This example has some tuples. 
-// These are arrays with mixed types. 
-// Define a tuple type for each. 
-// Add the types for the variables and function
+// Example:
+// const snack: [string, number] = ['Apple', 95]
 
-// Define the type for a tuple like this: 
-// const things: [string, number]
+// 🔧 Your Tasks:
+// - Add types to snack1, snack2, and snack3
+// - Add a parameter type for the function `displayNutrition`
+// - Add a return type
 
-// https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types
-
-const snack1 = ['Cookies', 142]
-const snack2 = ['Avocado', 234]
-const snack3 = ['Banana', 105]
+const snack1 = ['Cookies', 142];
+const snack2 = ['Avocado', 234];
+const snack3 = ['Banana', 105];
 
 function displayNutrition(food) {
-  return `Item: ${food[0]} Calories: ${food[1]}`
+  return `Item: ${food[0]} Calories: ${food[1]}`;
 }
 
-console.log(displayNutrition(snack1))
-console.log(displayNutrition(snack2))
-console.log(displayNutrition(snack3))
+console.log(displayNutrition(snack1));
+console.log(displayNutrition(snack2));
+console.log(displayNutrition(snack3));
 
-// Compile the code and check what type script says: 
+// 🧪 Compile and fix any type issues:
 // tsc example-5.ts
 
 export {
