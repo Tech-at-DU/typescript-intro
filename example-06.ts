@@ -11,7 +11,7 @@ const snack2 = ['Avocado', 234];
 const snack3 = ['Banana', 105];
 
 function displayNutrition(food) {
-  `Item: ${food[0]} Calories: ${food[1]}`; // <- something's missing here
+  return `Item: ${food[0]} Calories: ${food[1]}`; // <- something's missing here
 }
 
 console.log(displayNutrition(snack1));
